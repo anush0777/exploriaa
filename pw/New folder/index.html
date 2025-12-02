@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Explorer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏨 Hotel Explorer</h1>
+
+    <!-- Filter & Sort -->
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search by city">
+        <select id="sortSelect">
+            <option value="none">Sort By</option>
+            <option value="price">Price (Low → High)</option>
+            <option value="rating">Rating (High → Low)</option>
+        </select>
+    </div>
+
+    <!-- Hotel Cards -->
+    <div id="hotelList" class="hotel-list"></div>
+
+    <!-- Pagination -->
+    <div id="pagination" class="pagination"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
